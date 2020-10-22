@@ -49,3 +49,8 @@ button
   cursor:pointer;
   background-color:hsl(257, 27%, 26%);
 }
+
+.shorten {
+  border-style: dashed solid 2px;
+  display: block;
+}

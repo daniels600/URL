@@ -57,4 +57,9 @@ function copyToClipboard(element) {
   $temp.val($(element).text()).select();
   document.execCommand("copy");
   $temp.remove();
+  Swal.fire({
+    icon: 'success',
+    title: 'Congratulations',
+    text: 'Your shorten url is copied!',
+  })
 }
