@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!-- Image icon for the webpage -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a
+        class="navbar-brand"
+        href="#"
+        style="font-family: 'Poppins', sans-serif; font-weight: 700"
+        >Shortly</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="font-weight: 500"
+              >Features <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight: 500">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="font-weight: 500">Resources</a>
+          </li>
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+    
+        <div class="hero-message"> 
+          <h1 style="float:left;font-weight: 500;font-size: 4em; padding-top:8%; clear: left;">More than just <br/> shorter links 
+          </h1>
+          
+          <span style="padding-left: 1.5em;"><img src="images/illustration-working.svg" style=" width:50%;  height: 200; float:right"/></span>
+          <!-- This means take every text on the left beneath the image or that line -->
+          <div style="clear:left"></div>
+
+          <span style="color:hsl(0, 0%, 75%);">Build your  recognition and get detailed insights on how your links are performing.</span>
+          <br/>
+          <!-- <button class="getStarted-button" > Get Started</button> -->
+        </div>
+        
+
+        <div class="link-input">
+          <form id="form" >
+            <input type="url" class="form-control" id="url" placeholder="Shorten a link here... ">
+            <br/>
+            <button type="submit" class="btn btn-primary" id="shorten">Shorten it</button>
+            <span id="error-output" style="color:red"></span>
+          </form>
+
+          <div class="shorten_URLs">
+            <!-- <p id="shorten_link"><a href=""></a> </p> -->
+
+            <!-- The text field -->
+            <p id="shorten_link"></p>
+
+            <!-- The button used to copy the text -->
+            <button  onclick="copyToClipboard('#shorten_link')">Copy</button>
+          </div>
+        </div>
+        
+        
+        
+        
+       
+      
+  
+  
+     
+  
+  
+      
+  
+      Features Pricing Resources Login Sign Up More than just shorter links Build
+      your brand’s recognition and get detailed insights on how your links are
+      performing. Get Started Shorten It! Advanced Statistics Track how your links
+      are performing across the web with our advanced statistics dashboard. Brand
+      Recognition Boost your brand recognition with each click. Generic links
+      don’t mean a thing. Branded links help instil confidence in your content.
+      Detailed Records Gain insights into who is clicking your links. Knowing when
+      and where people engage with your content helps inform better decisions.
+      Fully Customizable Improve brand awareness and content discover ability
+      through customizable links, supercharging audience engagement. Boost your
+      links today Get Started Features Link Shortening Branded Links Analytics
+      Resources Blog Developers Support Company About Our Team Careers Contact
+  
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+   
+    <script src="script.js"></script>
+  </body>
+</html> 
